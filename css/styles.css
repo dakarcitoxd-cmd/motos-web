@@ -238,6 +238,35 @@ body {
     text-transform: uppercase;
 }
 
+/* TABS CATEGORIA */
+.tabs-categoria {
+    display: flex;
+    gap: 5px;
+    padding: 20px 0 0;
+}
+
+.tab {
+    padding: 10px 24px;
+    border: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.tab:hover {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.tab.activo {
+    background: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
 /* BOTONES */
 .boton {
     display: inline-block;
@@ -387,6 +416,9 @@ svg[stroke="currentColor"] {
     }
     .col-6[style*="padding-right"] {
         padding-right: 0 !important;
+    }
+    .tabs-categoria {
+        flex-wrap: wrap;
     }
 }
 

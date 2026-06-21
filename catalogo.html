@@ -39,250 +39,61 @@
     <section class="heroe-chiquito">
         <div>
             <span class="etiqueta">Explora nuestra colección</span>
-            <h1>Catálogo de Motos</h1>
-            <p>Las mejores marcas y modelos del mercado. Filtra por tipo, marca, precio y características para encontrar la moto que siempre soñaste.</p>
+            <h1>Catálogo MotoMundo</h1>
+            <p>Encuentra todo para tu moto: modelos, accesorios y repuestos de las mejores marcas.</p>
         </div>
     </section>
 
     <div class="contenedor">
         <div class="tabs-categoria">
-            <a href="catalogo.html" class="tab activo">Motos</a>
+            <a href="catalogo/motos.html" class="tab">Motos</a>
             <a href="catalogo/accesorios.html" class="tab">Accesorios</a>
             <a href="catalogo/repuestos.html" class="tab">Repuestos</a>
         </div>
     </div>
 
     <section class="seccion fondo-gris">
-        <div class="contenedor">
-            <div class="fila gap-20">
-
-                <div class="col-3">
-                    <div class="seccion-filtros">
-                        <h3>Filtros</h3>
-
-                        <div class="grupo-filtro">
-                            <h4>Marca</h4>
-                            <select id="marca">
-                                <option value="">Todas las marcas</option>
-                                <option>Yamaha</option>
-                                <option>Honda</option>
-                                <option>Kawasaki</option>
-                                <option>Suzuki</option>
-                                <option>Ducati</option>
-                                <option>Harley-Davidson</option>
-                            </select>
+        <div class="contenedor" style="text-align:center; padding: 60px 20px;">
+            <p style="font-size:1.2rem; color:#666; margin-bottom:30px;">Selecciona una categoría para ver nuestros productos.</p>
+            <div class="fila gap-20" style="justify-content:center;">
+                <div class="col-4">
+                    <a href="catalogo/motos.html" style="text-decoration:none; color:inherit; display:block;">
+                        <div class="tarjeta-producto" style="cursor:pointer;">
+                            <div class="imagen-producto">
+                                <img src="imagenes/motos/yamaha-r1.webp" alt="Motos" loading="lazy" style="height:200px; object-fit:cover;">
+                            </div>
+                            <div class="cuerpo-producto" style="text-align:center;">
+                                <h3 class="nombre-producto">Motos</h3>
+                                <p style="color:#888;">9 modelos deportivos, urbanas, cruiser y adventure</p>
+                            </div>
                         </div>
-
-                        <div class="grupo-filtro">
-                            <h4>Precio</h4>
-                            <select id="precio">
-                                <option value="">Todos los precios</option>
-                                <option>Menos de S/ 19,000</option>
-                                <option>S/ 19,000 - S/ 38,000</option>
-                                <option>S/ 38,000 - S/ 76,000</option>
-                                <option>Más de S/ 76,000</option>
-                            </select>
-                        </div>
-
-                        <div class="grupo-filtro">
-                            <h4>Tipo de Moto</h4>
-                            <select id="tipo">
-                                <option value="">Todos los tipos</option>
-                                <option>Deportiva</option>
-                                <option>Cruiser</option>
-                                <option>Urbana</option>
-                                <option>Adventure</option>
-                            </select>
-                        </div>
-
-                        <div class="grupo-filtro">
-                            <h4>Cilindrada</h4>
-                            <select id="cilindrada">
-                                <option value="">Todas las cilindradas</option>
-                                <option>Menos de 500cc</option>
-                                <option>500cc - 750cc</option>
-                                <option>750cc - 1000cc</option>
-                                <option>Más de 1000cc</option>
-                            </select>
-                        </div>
-
-                        <button class="boton boton-borde-rojo w-100 mt-15">Limpiar filtros</button>
-                    </div>
+                    </a>
                 </div>
-
-                <div class="col-9">
-                    <div class="encabezado-filtros">
-                        <span><strong id="contador">9</strong> modelos encontrados</span>
-                    </div>
-
-                    <div class="fila gap-20">
-                        <div class="col-4">
-                            <a href="catalogo/motos/yamaha-r1.html" style="text-decoration: none; color: inherit; display: block;">
-                            <div class="tarjeta-producto" data-f="marca:yamaha||precio:s/ 38,000 - s/ 76,000||tipo:deportiva||motor:tetracilíndrico||cilindrada:más de 1000cc||potencia:más de 150 hp||cilindros:4 cilindros">
-                                <div class="imagen-producto">
-                                    <img src="imagenes/motos/yamaha-r1.webp" alt="Yamaha R1" loading="lazy">
-                                    <span class="badge-producto">Nuevo</span>
-                                </div>
-                                <div class="cuerpo-producto">
-                                    <div class="marca-producto">Yamaha</div>
-                                    <h3 class="nombre-producto">Yamaha R1</h3>
-                                    <div class="especificaciones">1000cc - Deportiva</div>
-                                    <div class="pie-producto">
-                                        <span class="precio"><span class="moneda">S/ </span>72,200</span>
-                                        <button class="boton-agregar">Ver más</button>
-                                    </div>
-                                </div>
+                <div class="col-4">
+                    <a href="catalogo/accesorios.html" style="text-decoration:none; color:inherit; display:block;">
+                        <div class="tarjeta-producto" style="cursor:pointer;">
+                            <div class="imagen-producto">
+                                <img src="imagenes/accesorios/casco-integral.webp" alt="Accesorios" loading="lazy" style="height:200px; object-fit:cover;">
                             </div>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="catalogo/motos/honda-rebel-500.html" style="text-decoration: none; color: inherit; display: block;">
-                            <div class="tarjeta-producto" data-f="marca:honda||precio:s/ 19,000 - s/ 38,000||tipo:cruiser||motor:bicilíndrico||cilindrada:500cc - 750cc||potencia:menos de 50 hp||cilindros:2 cilindros">
-                                <div class="imagen-producto">
-                                    <img src="imagenes/motos/honda-rebel-500.webp" alt="Honda Rebel 500" loading="lazy">
-                                </div>
-                                <div class="cuerpo-producto">
-                                    <div class="marca-producto">Honda</div>
-                                    <h3 class="nombre-producto">Honda Rebel 500</h3>
-                                    <div class="especificaciones">500cc - Cruiser</div>
-                                    <div class="pie-producto">
-                                        <span class="precio"><span class="moneda">S/ </span>26,600</span>
-                                        <button class="boton-agregar">Ver más</button>
-                                    </div>
-                                </div>
+                            <div class="cuerpo-producto" style="text-align:center;">
+                                <h3 class="nombre-producto">Accesorios</h3>
+                                <p style="color:#888;">Cascos, guantes, chaquetas y más para rodar seguro</p>
                             </div>
-                            </a>
                         </div>
-                        <div class="col-4">
-                            <a href="catalogo/motos/kawasaki-z400.html" style="text-decoration: none; color: inherit; display: block;">
-                            <div class="tarjeta-producto" data-f="marca:kawasaki||precio:s/ 19,000 - s/ 38,000||tipo:urbana||motor:bicilíndrico||cilindrada:menos de 500cc||potencia:menos de 50 hp||cilindros:2 cilindros">
-                                <div class="imagen-producto">
-                                    <img src="imagenes/motos/kawasaki-z400.webp" alt="Kawasaki Z400" loading="lazy">
-                                    <span class="badge-producto">Oferta</span>
-                                </div>
-                                <div class="cuerpo-producto">
-                                    <div class="marca-producto">Kawasaki</div>
-                                    <h3 class="nombre-producto">Kawasaki Z400</h3>
-                                    <div class="especificaciones">400cc - Urbana</div>
-                                    <div class="pie-producto">
-                                        <span class="precio"><span class="moneda">S/ </span>20,900</span>
-                                        <button class="boton-agregar">Ver más</button>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="catalogo/motos/ducati-panigale-v4.html" style="text-decoration: none; color: inherit; display: block;">
-                            <div class="tarjeta-producto" data-f="marca:ducati||precio:más de s/ 76,000||tipo:deportiva||motor:tetracilíndrico||cilindrada:más de 1000cc||potencia:más de 150 hp||cilindros:4 cilindros">
-                                <div class="imagen-producto">
-                                    <img src="imagenes/motos/ducati-panigale-v4.webp" alt="Ducati Panigale V4" loading="lazy">
-                                </div>
-                                <div class="cuerpo-producto">
-                                    <div class="marca-producto">Ducati</div>
-                                    <h3 class="nombre-producto">Ducati Panigale V4</h3>
-                                    <div class="especificaciones">1100cc - Deportiva</div>
-                                    <div class="pie-producto">
-                                        <span class="precio"><span class="moneda">S/ </span>95,000</span>
-                                        <button class="boton-agregar">Ver más</button>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="catalogo/motos/harley-street-bob.html" style="text-decoration: none; color: inherit; display: block;">
-                            <div class="tarjeta-producto" data-f="marca:harley-davidson||precio:s/ 38,000 - s/ 76,000||tipo:cruiser||motor:bicilíndrico||cilindrada:más de 1000cc||potencia:50 - 100 hp||cilindros:2 cilindros">
-                                <div class="imagen-producto">
-                                    <img src="imagenes/motos/harley-davidson-street-bob.webp" alt="Harley-Davidson Street Bob" loading="lazy">
-                                </div>
-                                <div class="cuerpo-producto">
-                                    <div class="marca-producto">Harley-Davidson</div>
-                                    <h3 class="nombre-producto">Street Bob</h3>
-                                    <div class="especificaciones">1746cc - Cruiser</div>
-                                    <div class="pie-producto">
-                                        <span class="precio"><span class="moneda">S/ </span>58,900</span>
-                                        <button class="boton-agregar">Ver más</button>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="catalogo/motos/suzuki-v-strom-650.html" style="text-decoration: none; color: inherit; display: block;">
-                            <div class="tarjeta-producto" data-f="marca:suzuki||precio:s/ 19,000 - s/ 38,000||tipo:adventure||motor:bicilíndrico||cilindrada:500cc - 750cc||potencia:50 - 100 hp||cilindros:2 cilindros">
-                                <div class="imagen-producto">
-                                    <img src="imagenes/motos/suzuki-v-strom-650.webp" alt="Suzuki V-Strom 650" loading="lazy">
-                                </div>
-                                <div class="cuerpo-producto">
-                                    <div class="marca-producto">Suzuki</div>
-                                    <h3 class="nombre-producto">V-Strom 650</h3>
-                                    <div class="especificaciones">650cc - Adventure</div>
-                                    <div class="pie-producto">
-                                        <span class="precio"><span class="moneda">S/ </span>34,200</span>
-                                        <button class="boton-agregar">Ver más</button>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
+                    </a>
                 </div>
-
-                <div class="fila gap-20 mt-30">
-                    <div class="col-4">
-                        <a href="catalogo/motos/bmw-s1000rr.html" style="text-decoration: none; color: inherit; display: block;">
-                        <div class="tarjeta-producto" data-f="marca:bmw||precio:s/ 38,000 - s/ 76,000||tipo:deportiva||motor:tetracilíndrico||cilindrada:más de 1000cc||potencia:más de 150 hp||cilindros:4 cilindros">
+                <div class="col-4">
+                    <a href="catalogo/repuestos.html" style="text-decoration:none; color:inherit; display:block;">
+                        <div class="tarjeta-producto" style="cursor:pointer;">
                             <div class="imagen-producto">
-                                <img src="imagenes/motos/bmw-s1000rr.webp" alt="BMW S1000RR" loading="lazy">
+                                <img src="imagenes/repuestos/pastillas-de-freno.webp" alt="Repuestos" loading="lazy" style="height:200px; object-fit:cover;">
                             </div>
-                            <div class="cuerpo-producto">
-                                <div class="marca-producto">BMW</div>
-                                <h3 class="nombre-producto">BMW S1000RR</h3>
-                                <div class="especificaciones">1000cc - Deportiva</div>
-                                <div class="pie-producto">
-                                    <span class="precio"><span class="moneda">S/ </span>64,600</span>
-                                    <button class="boton-agregar">Ver más</button>
-                                </div>
+                            <div class="cuerpo-producto" style="text-align:center;">
+                                <h3 class="nombre-producto">Repuestos</h3>
+                                <p style="color:#888;">Piezas originales para mantenimiento y reparación</p>
                             </div>
                         </div>
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a href="catalogo/motos/triumph-street-triple.html" style="text-decoration: none; color: inherit; display: block;">
-                        <div class="tarjeta-producto" data-f="marca:triumph||precio:s/ 19,000 - s/ 38,000||tipo:urbana||motor:tricilíndrico||cilindrada:750cc - 1000cc||potencia:100 - 150 hp||cilindros:3 cilindros">
-                            <div class="imagen-producto">
-                                <img src="imagenes/motos/triumph-street-triple.webp" alt="Triumph Street Triple" loading="lazy">
-                            </div>
-                            <div class="cuerpo-producto">
-                                <div class="marca-producto">Triumph</div>
-                                <h3 class="nombre-producto">Triumph Street Triple</h3>
-                                <div class="especificaciones">765cc - Urbana</div>
-                                <div class="pie-producto">
-                                    <span class="precio"><span class="moneda">S/ </span>36,100</span>
-                                    <button class="boton-agregar">Ver más</button>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a href="catalogo/motos/ktm-390-duke.html" style="text-decoration: none; color: inherit; display: block;">
-                        <div class="tarjeta-producto" data-f="marca:ktm||precio:s/ 19,000 - s/ 38,000||tipo:urbana||motor:monocilíndrico||cilindrada:menos de 500cc||potencia:menos de 50 hp||cilindros:1 cilindro">
-                            <div class="imagen-producto">
-                                <img src="imagenes/motos/ktm-390-duke.webp" alt="KTM 390 Duke" loading="lazy">
-                            </div>
-                            <div class="cuerpo-producto">
-                                <div class="marca-producto">KTM</div>
-                                <h3 class="nombre-producto">KTM 390 Duke</h3>
-                                <div class="especificaciones">373cc - Urbana</div>
-                                <div class="pie-producto">
-                                    <span class="precio"><span class="moneda">S/ </span>20,100</span>
-                                    <button class="boton-agregar">Ver más</button>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -330,35 +141,6 @@
     </footer>
 
     <script>
-        var selects = document.querySelectorAll('.grupo-filtro select');
-        var cards = document.querySelectorAll('.tarjeta-producto');
-        var contador = document.getElementById('contador');
-
-        function filtrar() {
-            var filtros = [];
-            selects.forEach(function(s) {
-                if (s.value) filtros.push(s.id + ':' + s.value.toLowerCase().trim());
-            });
-            var visibles = 0;
-            cards.forEach(function(c) {
-                var data = (c.getAttribute('data-f') || '').toLowerCase();
-                var mostrar = true;
-                filtros.forEach(function(f) {
-                    if (data.indexOf(f) === -1) mostrar = false;
-                });
-                c.closest('.col-4').style.display = mostrar ? '' : 'none';
-                if (mostrar) visibles++;
-            });
-            contador.textContent = visibles;
-        }
-
-        selects.forEach(function(s) { s.addEventListener('change', filtrar); });
-
-        document.querySelector('.boton-borde-rojo').addEventListener('click', function() {
-            selects.forEach(function(s) { s.selectedIndex = 0; });
-            filtrar();
-        });
-
         var menuBtn = document.getElementById("botonMenu");
         var menuNav = document.getElementById("menuPrincipal");
         var capa = document.getElementById("capaNegra");

@@ -182,7 +182,8 @@ body {
 
 /* SECCION HEROE */
 .heroe {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1600") center / cover no-repeat;
+    position: relative;
+    overflow: hidden;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
@@ -190,6 +191,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.heroe-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.heroe > div {
+    position: relative;
+    z-index: 1;
 }
 
 .heroe h1 {
@@ -225,6 +241,40 @@ body {
     color: rgba(255,255,255,0.8);
     max-width: 600px;
     margin: 0 auto;
+}
+
+.boton-audio {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+    padding: 0;
+}
+.boton-audio:hover {
+    background: #c82333;
+    transform: scale(1.1);
+}
+.boton-audio.hero-pos {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10;
+}
+.audio-moto {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.audio-moto audio {
+    height: 40px;
 }
 
 .etiqueta {
@@ -936,9 +986,11 @@ svg[stroke="currentColor"] {
 }
 
 /* NOSOTROS */
-.imagen-historia img {
+.imagen-historia img,
+.imagen-historia video {
     width: 100%;
     border-radius: 10px;
+    display: block;
 }
 
 .texto-historia h2 {
